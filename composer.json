@@ -12,7 +12,9 @@
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.6",
         "pboivin/filament-peek": "^2.0",
-        "z3d0x/filament-fabricator": "^2.5"
+        "z3d0x/filament-fabricator": "^2.5",
+        "skyraptor/filament-blocks-builder": "^0.2.0",
+        "threls/filament-page-builder": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
