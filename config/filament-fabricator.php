@@ -51,5 +51,5 @@ return [
      * This is the name of the table that will be created by the migration and
      * used by the above page-model shipped with this package.
      */
-    'table_name' => 'pages',
+    'table_name' => 'fabricator-pages',
 ];
