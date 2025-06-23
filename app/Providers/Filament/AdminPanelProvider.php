@@ -17,7 +17,9 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-
+use Z3d0X\FilamentFabricator\FilamentFabricatorPlugin;
+use Pboivin\FilamentPeek\FilamentPeekPlugin;
+ 
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -53,6 +55,11 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->plugins([
+                FilamentFabricatorPlugin::make(),
+                FilamentPeekPlugin::make(),
             ]);
+            
     }
 }
